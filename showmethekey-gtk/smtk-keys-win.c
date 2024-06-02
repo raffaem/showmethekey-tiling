@@ -345,6 +345,7 @@ static void smtk_keys_win_constructed(GObject *object)
 	adw_window_set_content(ADW_WINDOW(win), win->box);
 
 	// Allow user to choose position by drag this.
+	/*
 	win->header_bar = adw_header_bar_new();
 	adw_header_bar_set_show_start_title_buttons(
 		ADW_HEADER_BAR(win->header_bar), false);
@@ -354,6 +355,7 @@ static void smtk_keys_win_constructed(GObject *object)
 	adw_header_bar_set_title_widget(ADW_HEADER_BAR(win->header_bar),
 					win->handle);
 	gtk_box_append(GTK_BOX(win->box), win->header_bar);
+	*/
 
 	win->emitter = smtk_keys_emitter_new(win->show_shift,
 					     win->show_keyboard,
